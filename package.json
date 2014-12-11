@@ -1,0 +1,22 @@
+{
+  "name": "repo.azukiapp.com",
+  "version": "0.0.1",
+  "description": "Homepage repositories of Azuki",
+  "homepage": "http://repo.azukiapp.com",
+  "dependencies": {
+    "grunt-markdown": "^0.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azukiapp/repo.azukiapp.com"
+  },
+  "author": "Gullit Miranda <gullit@azukiapp.com>",
+  "license": "Apache License",
+  "bugs": {
+    "url": "https://github.com/azukiapp/repo.azukiapp.com/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-markdown": "^0.6.1"
+  },
+}
