@@ -114,7 +114,7 @@
   <body>  
     <h2 id="ubuntu">Ubuntu</h2>
 <ol>
-<li><p>Adicione o repositório do Azuki a lista de sources do apt:</p>
+<li><p>Add the repository Azuki the sources list of apt:</p>
 <p><strong>Trusty 14.04 (LTS) (64-bit):</strong></p>
 <pre><code class="lang-bash"><span class="keyword">echo</span> <span class="string">"deb [arch=amd64] http://repo.azukiapp.com trusty main"</span> | \
  sudo tee /etc/apt/sources.list.d/azuki.list</code></pre>
@@ -122,18 +122,18 @@
 <pre><code class="lang-bash"><span class="keyword">echo</span> <span class="string">"deb [arch=amd64] http://repo.azukiapp.com precise main"</span> | \
  sudo tee /etc/apt/sources.list.d/azuki.list</code></pre>
 </li>
-<li><p>Adicionando as chaves do Azuki ao seu keychain local:</p>
+<li><p>Adding Azuki keys to your local keychain:</p>
 <pre><code class="lang-bash">sudo apt-key adv --keyserver keys.gnupg.net \
  --recv-keys 022856F6D78159DF43B487D5C82CF0628592D2C9</code></pre>
 </li>
-<li><p>Atualiza a lista de pacotes e instale o <code>azk</code>:</p>
+<li><p>Updates the list of packages and install <code>azk</code>:</p>
 <pre><code class="lang-bash">sudo apt-get update
 sudo apt-get install azk</code></pre>
 </li>
 </ol>
 <h2 id="fedora-20">Fedora 20</h2>
 <ol>
-<li><p>Adicione o repositório do Azuki:</p>
+<li><p>Add the repository Azuki:</p>
 <pre><code class="lang-bash">$ echo "[azuki]
 name=azk
 baseurl=http://repo.azukiapp.com/fedora20
@@ -141,14 +141,16 @@ enabled=1
 gpgcheck=1
 " &gt; /etc/yum.repos.d/azuki.repo</code></pre>
 </li>
-<li><p>Adicionando as chaves do Azuki ao seu keychain local:</p>
+<li><p>Adding Azuki keys to your local keychain:</p>
 <pre><code class="lang-bash">rpm --import \
  <span class="string">'http://repo.azukiapp.com/keys/azuki.asc'</span></code></pre>
 </li>
-<li><p>Instale o <code>azk</code> e suas dependências:</p>
+<li><p>Install <code>azk</code> and its dependencies:</p>
 <pre><code class="lang-bash">sudo yum install azk</code></pre>
 </li>
 </ol>
+<h2 id="more">More</h2>
+<p>  <a href="http://docs.azk.io/pt-BR/installing/linux.html">Complete Documentation</a></p>
 
   </body>
 </html>
